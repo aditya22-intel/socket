@@ -5,7 +5,8 @@ import (
 	"log"
 	"os"
 	"os/exec"
-	"terminal/utils"
+
+	"github.com/aditya22-intel/socket/utils"
 )
 
 func Login() {

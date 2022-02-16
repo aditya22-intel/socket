@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"terminal/cmd"
+
+	"github.com/aditya22-intel/socket/cmd"
 
 	"github.com/gorilla/websocket"
 	corev1client "k8s.io/client-go/kubernetes/typed/core/v1"

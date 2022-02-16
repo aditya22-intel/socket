@@ -1,8 +1,8 @@
 package main
 
 import (
-	"terminal/cmd"
-	"terminal/socket"
+	"github.com/aditya22-intel/socket/cmd"
+	"github.com/aditya22-intel/socket/socket"
 )
 
 func main() {
