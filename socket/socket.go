@@ -20,7 +20,7 @@ var upgrader = websocket.Upgrader{
 
 func SocketIO(client *corev1client.CoreV1Client, namespace string) {
 	fmt.Println("Go Websocket")
-	cmd.GetPods(client)
+	cmd.GetPods(client, namespace)
 	setupRoutes()
 }
 
