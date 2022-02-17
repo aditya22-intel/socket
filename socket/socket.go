@@ -5,6 +5,8 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/aditya22-intel/socket/cmd"
+
 	"github.com/gorilla/websocket"
 	corev1client "k8s.io/client-go/kubernetes/typed/core/v1"
 )
@@ -19,6 +21,7 @@ var upgrader = websocket.Upgrader{
 
 func SocketIO(client *corev1client.CoreV1Client, namespace string) {
 	fmt.Println("Go Websocket")
+	cmd.GetPods(client, namespace)
 	setupRoutes()
 }
 

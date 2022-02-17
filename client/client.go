@@ -1,8 +1,6 @@
-package cmd
+package client
 
 import (
-	"fmt"
-
 	corev1client "k8s.io/client-go/kubernetes/typed/core/v1"
 	"k8s.io/client-go/tools/clientcmd"
 )
@@ -21,7 +19,7 @@ func GetOCClient() (*corev1client.CoreV1Client, string) {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(namespace)
+	//fmt.Println(namespace)
 
 	// Get a rest.Config from the kubeconfig file.  This will be passed into all
 	// the client objects we create.
