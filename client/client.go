@@ -2,10 +2,11 @@ package client
 
 import (
 	corev1client "k8s.io/client-go/kubernetes/typed/core/v1"
+	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 )
 
-func GetOCClient() (*corev1client.CoreV1Client, string) {
+func GetOCClient() (*corev1client.CoreV1Client, string, *restclient.Config) {
 
 	// Instantiate loader for kubeconfig file.
 	kubeconfig := clientcmd.NewNonInteractiveDeferredLoadingClientConfig(
@@ -33,6 +34,6 @@ func GetOCClient() (*corev1client.CoreV1Client, string) {
 	if err != nil {
 		panic(err)
 	}
-
-	return coreclient, namespace
+	config, _ := kubeconfig.ClientConfig()
+	return coreclient, namespace, config
 }

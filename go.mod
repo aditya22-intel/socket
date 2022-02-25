@@ -17,6 +17,7 @@ require (
 	github.com/json-iterator/go v0.0.0-20180701071628-ab8a2e0c74be // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.1 // indirect
+	github.com/openshift/oc v4.2.0-alpha.0+incompatible // indirect
 	github.com/spf13/pflag v1.0.1 // indirect
 	golang.org/x/crypto v0.0.0-20181025213731-e84da0312774 // indirect
 	golang.org/x/net v0.0.0-20190206173232-65e2d4e15006 // indirect

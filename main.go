@@ -20,6 +20,8 @@ func main() {
 	case "login":
 		cmd.Login()
 		break
+	case "shell":
+		cmd.GetShell()
 	default:
 		panic("Please enter proper command")
 	}
