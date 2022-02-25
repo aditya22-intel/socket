@@ -1,0 +1,16 @@
+package: .
+import:
+- package: github.com/aditya22-intel/socket
+  subpackages:
+  - client
+  - cmd
+  - utils
+- package: github.com/gorilla/websocket
+- package: k8s.io/apimachinery
+  subpackages:
+  - pkg/apis/meta/v1
+- package: k8s.io/client-go
+  version: ^12.0.0
+  subpackages:
+  - kubernetes/typed/core/v1
+  - tools/clientcmd
